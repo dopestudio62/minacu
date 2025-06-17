@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Minaçu Sustentável</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Menu de navegação fixo */
+        nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(45, 106, 79, 0.7);
+            padding: 5px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1050;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .navbar {
+            width: 100%;
+        }
+
+        nav .navbar-brand {
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav .navbar-nav .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 6px 12px;
+            font-size: 14px;
+            margin: 0 10px;
+        }
+
+        nav .navbar-nav .nav-link:hover {
+            background-color: #52b69a;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: rgba(45, 106, 79, 0.9);
+            color: white;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Seção Contato */
+        #contato {
+            background-color: #e9f5f2;
+            padding: 50px 0;
+        }
+
+        #contato h2 {
+            color: #2d6a4f;
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        #contato p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Seção de informações de contato */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .contact-info div {
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #2d6a4f;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info div h4 {
+            font-size: 24px;
+            color: #2d6a4f;
+        }
+
+        .contact-info div p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact-info div i {
+            font-size: 40px;
+            color: #2d6a4f;
+            margin-bottom: 10px;
+        }
+
+        /* Formulário de contato */
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #52b69a;
+        }
+
+        /* Ajuste para dispositivos móveis */
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e Menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Minaçu Sustentável Logo" style="max-width: 80px;">
+                    MINAÇU SUSTENTÁVEL
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carta_aberta.html">Carta Aberta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projeto/galeria_projeto.html">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Estamos à disposição para responder suas dúvidas ou sugestões. Entre em contato conosco pelos seguintes meios:</p>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>minacusustentavel@gmail.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Telefone</h4>
+                    <p>(62) 9 8240-7179</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Envie uma Mensagem</h3>
+                <form action="mailto:minacusustentavel@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu e-mail" required>
+                    <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Minaçu Sustentável. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

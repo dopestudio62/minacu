@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Aberta - Minaçu Sustentável</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Menu de navegação fixo */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(45, 106, 79, 0.7);
+            padding: 5px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1050;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .navbar-brand {
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav .navbar-nav .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 6px 12px;
+            font-size: 14px;
+            margin: 0 10px;
+        }
+
+        nav .navbar-nav .nav-link:hover {
+            background-color: #52b69a;
+            border-radius: 5px;
+        }
+
+        /* Carta Aberta */
+        #carta-aberta {
+            background-color: #f0f8f1;
+            padding: 50px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 60px; /* Ajuste para não sobrepor ao menu */
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Ajusta o conteúdo para o meio */
+            align-items: center;
+        }
+
+        #carta-aberta h2 {
+            color: #2d6a4f;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #carta-aberta p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: rgba(45, 106, 79, 0.9);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho e Menu -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Minaçu Sustentável Logo" style="max-width: 80px;">
+                    MINAÇU SUSTENTÁVEL
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="carta_aberta.html">Carta Aberta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria_projeto.html">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carta Aberta -->
+    <section id="carta-aberta">
+        <div class="container">
+            <h2>Carta Aberta à Comunidade de Minaçu</h2>
+            <p><strong>Por um compromisso urgente com o destino de nossos resíduos</strong></p>
+            <p>As imagens de um caminho de terra, ladeado por bambuzais, revelam mais que a paisagem típica do cerrado: expõem o descaso. Sacos plásticos, restos de obra e galhos secos formam um aterro improvisado que fere o verde e ameaça as nascentes. Jogar lixo à beira da estrada pode parecer gesto isolado, mas contamina o solo, atrai vetores de doença, bloqueia o escoamento da água da chuva e aumenta o risco de queimadas. A mudança começa em cada casa e se espalha pelo bairro. Separar o lixo, dar destino correto a recicláveis e entulhos, reduzir o consumo desnecessário, reutilizar embalagens, organizar mutirões de limpeza, denunciar descartes irregulares e transformar escolas, igrejas e comércios em núcleos de educação ambiental — tudo isso cabe a nós, agora, sem esperar por grandes campanhas. Minaçu nasceu abraçada pelo cerrado. Cada arbusto sombreando nossas estradas lembra que esta terra oferece abrigo e espera cuidado em troca. Que estas fotos de descuido sirvam de alerta e convoquem um movimento coletivo simples, porém transformador: manter o lixo longe do chão e o verde perto do coração.</p>
+            <p><strong>Cidade limpa começa na consciência de cada morador.</strong></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Minaçu Sustentável. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
