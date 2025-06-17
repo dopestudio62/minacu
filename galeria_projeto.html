@@ -1,42 +1,170 @@
-<!-- Galeria do Projeto -->
-<section id="galeria" class="container">
-  <h2 class="text-center mb-4">Galeria do Projeto</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria de Projetos - Minaçu Sustentável</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <div class="gallery">
-    <!-- Projeto Unificado: Reciclagem Criativa -->
-    <div class="card">
-      <img src="imagens/papel1.jpeg" class="card-img-top" alt="Reciclagem Criativa">
-      <div class="card-body">
-        <h5 class="card-title">Projeto 1: Reciclagem Criativa</h5>
-        <p class="card-text">
-          Unindo criatividade com consciência ambiental, esse projeto transforma resíduos de papel em novos produtos por meio de processos artesanais.
-        </p>
-        <a href="projeto1.html" class="btn btn-custom">Ver detalhes</a>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(45, 106, 79, 0.7);
+      padding: 5px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1050;
+      border-radius: 10px;
+    }
+
+    .navbar-brand {
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .nav-link {
+      color: white !important;
+      padding: 6px 12px;
+      margin: 0 10px;
+    }
+
+    .nav-link:hover {
+      background-color: #52b69a;
+      border-radius: 5px;
+    }
+
+    .main-content {
+      margin-top: 90px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .btn-custom {
+      background-color: #52b69a;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 8px 20px;
+      text-decoration: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #2d6a4f;
+    }
+
+    footer {
+      background-color: rgba(45, 106, 79, 0.9);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo" style="max-width: 80px;" /> MINAÇU SUSTENTÁVEL
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="carta_aberta.html">Carta Aberta</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galeria_projeto.html">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <!-- Galeria do Projeto 2 -->
-    <div class="card">
-      <img src="imagens/papel2.jpeg" class="card-img-top" alt="Galeria Papel Reciclado">
-      <div class="card-body">
-        <h5 class="card-title">Projeto 2: Galeria de Papel Reciclado</h5>
-        <p class="card-text">
-          Explore a coleção de imagens e criações feitas com papel reciclado. Um retrato visual do impacto positivo na sustentabilidade.
-        </p>
-        <a href="galeria_projeto2.html" class="btn btn-custom">Acessar Galeria</a>
+  <!-- Conteúdo Principal -->
+  <main class="main-content container">
+    <h2 class="text-center mb-4">Galeria de Projetos</h2>
+    <div class="gallery">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="imagens/papel1.jpeg" alt="Reciclagem Criativa" />
+        <div class="card-body">
+          <h5 class="card-title">Reciclagem Criativa</h5>
+          <p class="card-text">Transformando resíduos de papel em arte e funcionalidade com processos artesanais.</p>
+          <a href="projeto1.html" class="btn btn-custom">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="imagens/papel2.jpeg" alt="Galeria Papel Reciclado" />
+        <div class="card-body">
+          <h5 class="card-title">Galeria Papel Reciclado</h5>
+          <p class="card-text">Veja em imagens como o papel reciclado ganhou vida em novos formatos e ideias sustentáveis.</p>
+          <a href="galeria_projeto2.html" class="btn btn-custom">Ver galeria</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="imagens/papel3.jpeg" alt="Apresentação do Projeto" />
+        <div class="card-body">
+          <h5 class="card-title">Apresentação do Projeto</h5>
+          <p class="card-text">Conheça os objetivos e impactos do projeto na escola e na comunidade local.</p>
+          <a href="apresentacao.html" class="btn btn-custom">Ver apresentação</a>
+        </div>
       </div>
     </div>
+  </main>
 
-    <!-- Apresentação Geral -->
-    <div class="card">
-      <img src="imagens/papel3.jpeg" class="card-img-top" alt="Apresentação do Projeto">
-      <div class="card-body">
-        <h5 class="card-title">Apresentação Geral</h5>
-        <p class="card-text">
-          Veja como o projeto foi desenvolvido com os alunos, promovendo engajamento, criatividade e responsabilidade ambiental.
-        </p>
-        <a href="apresentacao.html" class="btn btn-custom">Assistir Apresentação</a>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Minaçu Sustentável. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
